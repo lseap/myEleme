@@ -1,0 +1,81 @@
+/* pages/confirmOrder/confirmOrder.wxss */
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#008BFF, rgb(248, 248, 248) 30%);
+}
+
+.top {
+  color: white;
+  padding: 50rpx;
+}
+
+.top text {
+  font-size: x-small;
+  font-weight: lighter;
+}
+
+.top view {
+  font-size: large;
+  font-weight: bold;
+}
+
+.top navigator {
+  font-size: large;
+  font-weight: bold;
+}
+
+.carArrayDetail_view {
+  width: 95%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.carArrayDetail {
+  padding: 40rpx 0;
+  margin: 0 50rpx;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx dotted gainsboro;
+}
+
+.carArrayDetail_view .carArrayDetail .name {
+  width: 40%;
+}
+
+.totalPrice {
+  width: 95%;
+  text-align: right;
+  padding: 40rpx 0;
+}
+
+.carArrayDetail_view span {
+  font-size: large;
+  font-weight: bold;
+}
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+}
+
+.bottom .price {
+  background-color: #3C3C3C;
+  color: white;
+  width: 70%;
+  line-height: 100rpx;
+  padding-left: 40rpx;
+}
+
+.bottom .gotoPay {
+  background-color: #00E066;
+  color: white;
+  width: 30%;
+  text-align: center;
+  line-height: 100rpx;
+
+}

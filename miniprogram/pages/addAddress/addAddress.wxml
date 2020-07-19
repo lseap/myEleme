@@ -1,0 +1,16 @@
+<view class="container">
+	<view class="name input_view">
+		<span>联系人</span>
+		<input class="input" placeholder="姓名" bindblur="setName" />
+	</view>
+	<view class="phoneNum input_view">
+		<span>电话</span>
+		<input class="input" type="number" placeholder="手机号码" bindblur="setPhoneNum" />
+	</view>
+	<view class="address input_view">
+		<span>地址</span>
+		<input class="input" placeholder="{{address}}" bindblur="setAddress" />
+	</view>
+</view>
+
+<button class="btn" bindtap="addAddress">确 定</button>

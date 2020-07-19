@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/order/order",
+    "pages/orderDetail/orderDetail",
+    "pages/confirmOrder/confirmOrder",
+    "pages/receivingAddress/receivingAddress",
+    "pages/addAddress/addAddress",
+    "pages/merchantsDetail/merchantsDetail"
+  ],
+  "window": {
+    "navigationBarTitleText": "3217004641罗海屏-myEleme",
+    "navigationBarTextStyle": "white",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#008BFF"
+  },
+  "tabBar": {
+    "color": "#3D3D3D",
+    "selectedColor": "#008BFF",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "iconPath": "img/index.png",
+        "selectedIconPath": "img/index_active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "iconPath": "img/order.png",
+        "selectedIconPath": "img/order_active.png",
+        "text": "订单"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

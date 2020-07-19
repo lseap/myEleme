@@ -1,0 +1,165 @@
+.locate_view {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 20rpx 50rpx;
+}
+
+.locate_icon,
+.iconfont_up {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.iconfont_up {
+  margin-left: 10rpx;
+}
+
+.search_view {
+  display: flex;
+  align-items: center;
+  margin: 40rpx 20rpx;
+  border-radius: 70rpx;
+  height: 70rpx;
+  background-color: #f9f9f9;
+}
+
+.search_icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin: 0 20rpx 0 30rpx;
+}
+
+.search_input {
+  width: 80%;
+}
+
+.placeholder {
+  font-size: 32rpx;
+  text-align: center;
+}
+
+.classification_view {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.classification {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rpx;
+  font-size: small;
+}
+
+.classificationImg {
+  width: 160rpx;
+  height: 110rpx;
+  margin-bottom: 10rpx;
+}
+
+.rotationChart_swiper {
+  width: 95%;
+  height: 200rpx;
+  margin: 20rpx auto;
+}
+
+.rotationChart_img {
+  width: 100%;
+  height: 200rpx;
+  border-radius: 20rpx;
+}
+
+.title {
+  margin: 0 0 20rpx 30rpx;
+  color: #3099FF;
+  font-weight: bold;
+  font-size: 34rpx;
+}
+
+.btn_view {
+  display: flex;
+}
+
+.btn {
+  width: 22%;
+  padding: 0;
+  border: none;
+  font-size: 22rpx;
+  background-color: #F3F3F3;
+}
+
+.btn::after {
+  border: none;
+}
+
+.merchants {
+  display: flex;
+  justify-content: space-around;
+  margin: 20rpx;
+}
+
+.merchantsLOGO {
+  width: 200rpx;
+  height: 200rpx;
+  margin-right: 20rpx;
+}
+
+.merchants_right {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.merchantsTitle {
+  font-weight: bold;
+}
+
+.merchants_right_middle1,
+.label_list {
+  display: flex;
+  align-items: center;
+}
+
+.merchants_right_middle1 {
+  justify-content: space-between;
+}
+
+.merchants_right_middle1_left {
+  display: flex;
+  align-items: center;
+}
+
+.score {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.merchants_right_middle1 text {
+  margin-right: 50rpx;
+}
+
+.merchants_right_middle1,
+.merchants_right_middle2 {
+  font-size: x-small;
+}
+
+.fengNiaoZhuanSong {
+  background-color: #00A6FF;
+  color: white;
+  padding: 5rpx 10rpx;
+  font-size: xx-small;
+  font-weight: lighter;
+}
+
+.label {
+  font-size: 20rpx;
+  padding: 0rpx 5rpx;
+  margin-right: 20rpx;
+  border: 1rpx solid rgba(255, 0, 0, 0.685);
+  color: red;
+}

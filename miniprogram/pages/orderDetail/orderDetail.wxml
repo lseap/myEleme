@@ -1,0 +1,42 @@
+<!-- <view class="">{{carArray.}}</view>
+
+<view class="carArrayDetail_view">
+	<view class="carArrayDetail" wx:for="{{carArray}}">
+		<view class="name">{{item.name}}</view>
+		<view>✖{{item.num}}</view>
+		<view>￥{{item.price*item.num}}</view>
+	</view>
+
+	<view class="totalPrice">小计￥<span>{{totalPrice}}</span></view>
+
+</view> -->
+
+<view class="top">
+	<image class="merchantsImg" src="{{order[0].merchantsImg}}"></image>
+	<view>{{order[0].merchantsName}}</view>
+</view>
+<view class="carArrayDetail_view">
+	<view class="carArrayDetail" wx:for="{{order[0].carArray}}">
+		<view class="name">{{item.name}}</view>
+		<view>✖{{item.num}}</view>
+		<view>￥{{item.price*item.num}}</view>
+	</view>
+	<view class="totalPrice">实付￥<span>{{totalPrice}}</span></view>
+</view>
+
+<view class="userInformation_view">
+	<view class="title">配送信息</view>
+	<view class="userInformation">
+		<view>{{order[0].userInformation.name}}</view>
+		<view>{{order[0].userInformation.phoneNum}}</view>
+		<view>{{order[0].userInformation.address}}</view>
+	</view>
+</view>
+
+<view class="userInformation_view">
+	<view class="title">订单信息</view>
+	<view class="userInformation orderInformation">
+		<view class="text">订单号：{{_id}}</view>
+		<view class="text">下单时间：{{order[0].listTime}}</view>
+	</view>
+</view>

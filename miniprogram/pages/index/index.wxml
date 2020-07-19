@@ -1,0 +1,63 @@
+<!-- 顶部定位 -->
+<!-- <view class="locate_view">
+	<image class="locate_icon" src="/img/locate.png"></image>
+	<view class="locate_text">{{currentLocated}}</view>
+	<image class="iconfont_up" src="/img/iconfont_up.png"></image>
+</view> -->
+
+<!-- 搜索栏 -->
+<!-- <view class="search_view">
+	<image class="search_icon" src="/img/search.png"></image>
+	<input class="search_input" placeholder="搜索商家、商品名称" placeholder-class='placeholder' bindfocus="search" />
+</view> -->
+
+<!-- 分类 -->
+<!-- <view class='classification_view'>
+	<view class='classification' wx:for='{{classification}}'>
+		<image class='classificationImg' src='{{item.classificationImg}}'></image>
+		<view class='classificationText'>{{item.classificationText}}</view>
+	</view>
+</view> -->
+
+<!-- 轮播图 -->
+<swiper class="rotationChart_swiper" indicator-dots="true" autoplay="true" interval="3000" duration="1000">
+	<block wx:for="{{rotationChart}}" wx:key="*this">
+		<swiper-item>
+			<image class="rotationChart_img" src="{{item.imgUrl}}"></image>
+		</swiper-item>
+	</block>
+</swiper>
+
+<view class="title">推荐商家</view>
+
+<!-- <view class="btn_view">
+	<button class="btn">吃货节</button>
+	<button class="btn">首单立减</button>
+	<button class="btn">津贴优惠</button>
+	<button class="btn">满减优惠</button>
+</view> -->
+
+<view class="merchants_list_view">
+	<view class="merchants" wx:for="{{merchantsList}}" data-index="{{index}}" bindtap="gotoMerchants">
+		<image class="merchantsLOGO" src="{{item.merchantsLOGO}}">
+		</image>
+		<view class="merchants_right">
+			<view class="merchantsTitle">{{item.merchantsTitle}}</view>
+			<view class="merchants_right_middle1">
+				<view class="merchants_right_middle1_left">
+					<image class="score" src="/img/score.png"></image>
+					<text>{{item.score}}</text>
+					<text>月售{{item.sale}}</text>
+				</view>
+				<view class="fengNiaoZhuanSong" wx:if="{{item.fengNiaoZhuanSong}}">蜂鸟专送</view>
+			</view>
+			<view class="merchants_right_middle2">
+				<text>起送{{item.startingPrice}}</text>
+				<text>{{item.deliveryFee}}</text>
+			</view>
+			<view class="label_list">
+				<view class="label" wx:for="{{item.label}}" wx:for-item="label">{{label}}</view>
+			</view>
+		</view>
+	</view>
+</view>

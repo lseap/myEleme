@@ -1,0 +1,29 @@
+page {
+  background-color: #F5F5F5;
+}
+
+.container {
+  margin-top: 30rpx;
+}
+
+.input_view {
+  display: flex;
+  padding: 30rpx;
+  background-color: white;
+  border-bottom: 1rpx solid #F0F0F0;
+}
+
+.input_view span {
+  width: 20%;
+}
+
+.input {
+  width: 80%;
+}
+
+.btn {
+  background-color: #4BDB62;
+  color: white;
+  width: 95%;
+  margin: 50rpx auto;
+}

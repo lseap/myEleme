@@ -1,0 +1,16 @@
+<view class="receivingAddress_view" wx:for="{{receivingAddress}}">
+	<view class=" left" data-index="{{item._id}}" bindtap="selectReceivingAddress">
+		<view class="top">
+			<view class="name">{{item.confirmAddress.name}}</view>
+			<view class="phoneNum">{{item.confirmAddress.phoneNum}}</view>
+		</view>
+		<view class="address">{{item.confirmAddress.address}}</view>
+	</view>
+
+	<view class="right">
+		<!-- <image class="edit img" src="/img/edit.png"></image> -->
+		<image class="del img" src="/img/delete.png" data-index="{{item._id}}" bindtap="delReceivingAddress"></image>
+	</view>
+</view>
+
+<view class="addAddress" bindtap="addAddress">＋ 新增地址</view>

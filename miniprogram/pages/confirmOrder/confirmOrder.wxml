@@ -1,0 +1,27 @@
+<view class="container">
+	<view class="top">
+		<text>订单配送至</text>
+		<view wx:if="{{!isSelectReceivingAddress}}" bindtap="selectAddress">选择收货地址 > </view>
+		<view wx:else bindtap="selectAddress">
+			<view>{{selectReceivingAddress.address}} ></view>
+			<view style="font-size: medium; font-weight: normal;">{{selectReceivingAddress.name}} {{selectReceivingAddress.phoneNum}}</view>
+		</view>
+		<!-- <navigator url="/pages/receivingAddress/receivingAddress">选择收货地址 > </navigator> -->
+	</view>
+
+	<view class="carArrayDetail_view">
+		<view class="carArrayDetail" wx:for="{{carArray}}">
+			<view class="name">{{item.name}}</view>
+			<view>✖{{item.num}}</view>
+			<view>￥{{item.price*item.num}}</view>
+		</view>
+
+		<view class="totalPrice">小计￥<span>{{totalPrice}}</span></view>
+
+	</view>
+
+	<view class="bottom">
+		<view class="price">￥{{totalPrice}}</view>
+		<view class="gotoPay" bindtap="gotoPay">去支付</view>
+	</view>
+</view>
